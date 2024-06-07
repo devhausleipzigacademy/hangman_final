@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(206, 206, 206) !important;
+}
+
+.wrapper {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 2rem;
+}
+
+#lives {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#word {
+  font-size: 2rem;
+}
+
+#alphabet {
+  display: flex;
+  max-width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letter {
+  margin: 10px;
+}
+
+#hangman {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  position: relative;
+}
+
+.hangman-item {
+  background-color: black;
+  position: absolute;
+}
+
+#hangman_9 {
+  width: 100px;
+  height: 2px;
+  bottom: 0;
+  left: 50px;
+}
+#hangman_8 {
+  width: 2px;
+  height: 140px;
+  bottom: 0;
+  left: 50px;
+}
+#hangman_7 {
+  width: 50px;
+  height: 2px;
+  left: 50px;
+  bottom: 140px;
+}
+#hangman_6 {
+  width: 2px;
+  height: 30px;
+  left: 100px;
+  bottom: 112px;
+}
+#hangman_5 {
+  height: 30px;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: calc(100px - 30px/2);
+  bottom: calc(112px - 30px);
+}
+#hangman_4 {
+  width: 2px;
+  height: 40px;
+  left: calc(100px - 30px/2 + 20px - 6px);
+  bottom: calc(112px - 30px - 40px);
+  }
+  #hangman_3 {
+    width: 45px;
+    height: 2px;
+    left: calc(100px - 45px/2);
+    bottom: calc(112px - 30px - 15px);
+}
+#hangman_2 {
+  width: 30px;
+  height: 2px;
+  transform: rotate(-45deg);
+  bottom: 33px;
+  left: 75px;
+}
+#hangman_1 {
+  width: 30px;
+  height: 2px;
+  transform: rotate(45deg);
+  bottom: 33px;
+  left: 95px;
+}
